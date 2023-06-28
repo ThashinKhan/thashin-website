@@ -2,75 +2,97 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">
-        <title>Thashin Khan - Resume</title>
+        <link rel="stylesheet" href="styles_resume.css">
+        <title>Thashin Khan - Projects</title>
     </head>
 
     <body>
-        <!--Header Info-->
-        <h1>Thashin Khan</h1>
-        <p>Toronto, Ontario, Canada</p>
-        <p><a href="mailto:thashinkhan@gmail.com">thashinkhan@gmail.com</a> | <a href = "https://www.linkedin.com/in/thashinkhan/">linkedin</a></p>
-        
-        <!--Education-->
-        <h2>Education</h2>
-        <p>Ryerson University - Bachelor of Engineering (Electrical, 4th Year)</p>
-        <p>September 2018 - Present</p>
-        <p>GPA: 3.290/4.33</p>
-        
-        <!--Technical Skills-->
-        <h2>Technical Skills</h2>
-        <p>Languages:    C/C++, VHDL, Java, Assembly, SystemC, HTML/CSS/JavaScript</p>
-        <p>Tools:        Oscilloscope, EMI Test Receivers, Function Generator, Logic Analyzer, Digital Multimeter</p>
-        <p>Technologies: Quartus, Keil MDK, Fusion 360/Cura, LTSpice, Cadence, Microsoft Office</p>
+        <div class="document">
+            <div class="page1">
 
-        <!--Professional Experience-->
-        <h2>Professional Experience</h2>
-        <p><strong>Electromagnetic Compatibility (EMC) & Reliability Intern - AMD, Markham, ON (May 2021 - Aug 2022)</strong><p>
-        <ul>
-            <li>Performed Electromagnetic Interference (EMI), Radio Frequency Interference (RFI), and Safety pre-certification tests on various AMD GPUs.</li>
-            <li>Verified AMDs GPUs comply with international standards for EMI/RFI (CISPR 32/FCC Part 15-B) and Safety (IEC62368-1 Ed 2).</li>
-            <li>Mitigated EMI/RFI/Safety failures resulting from GPUs to ensure compliance with respective standards and first time pass at third-party certification. </li>
-            <li>Assisted in 15+ EMC/Safety certifications in AMD Markham/third-party certification labs, and completed 125+ pre-certification tests on various AMD products. </li>
-            <li>Experience with troubleshooting issues in Windows during systems setups by modifying vBIOS/IFWI, sBIOS, and Windows drivers. Debugged numerous issues brought up in Linux/Datacenter system setups, and with installation of AMD ROCm. </li>
-            <li>Trained upcoming PEYs and wrote guides on various AMD tools, lab procedures and internal/external hardware and software to assist 3rd party sites and new students. </li>
-            <li>Reduced EMI/Safety/RFI test overhead by modifying and creating excel templates using Excel VBA.</li>
-        </ul>
+                <div class="information card">
+                    <h1 style="font-size: medium;">Thashin Khan</h1>
+                    <p>Toronto, Ontario, Canada</p>
+                    <p><a href="mailto:thashinkhan@gmail.com">thashinkhan@gmail.com</a> | <a href = "https://www.linkedin.com/in/thashinkhan/">linkedin</a></p>
+                </div>
 
-        <!--School Projects-->
-        <h2>School Projects</h2>
-        <p><strong>HPS/FPGA Based MD5 Decryption SoC (May 2023)</strong></p>
-        <ul>
-            <li>DE1-SoC Dev Board was used to compute 32 MD5 hashes concurrently on an Altera Cyclone V FPGA. A custom MD5 hash controller application was created using a dual core ARM Cortex A9 based microcontroller running Yocto Linux.</li>
-            <li>Communication between the FPGA and processor was facilitated by the AMBA bus using the AMBA 3.0 (AXI V1.0) 32-bit protocol. Custom Avalon Memory Mapped (MM) Slaves were created using Altera's Qsys Integration Tool.</li>
-        </ul>
+                <div class="education card">
+                    <h2 class="headinfo">Education</h2>
+                    <p>Ryerson University - Bachelor of Engineering (Electrical, 4th Year)</p>
+                    <p>September 2018 - Present</p>
+                    <p>GPA: 3.290/4.33</p>
+                </div>
 
-        <p><strong>Single Button Smart Phone Interface (April 2023)</strong></p>
-        <ul>
-            <li>Created a Smartphone Interface (SPI) which controls basic smartphone functions through a single physical button and a 24x2 LCD. By timing button presses, users can dial a number, call saved contacts, all while the SPI collects ECG data to be sent wirelessly via Bluetooth to an app.</li>
-        </ul>
+                <div class="technical card">
+                    <h2 class="headinfo">Technical Skills</h2>
+                    <p>Languages: <inline style="margin-left: 32px;">C/C++, VHDL, Java, Assembly, SystemC, HTML/CSS/JavaScript</inline></p>
+                    <p>Tools: <inline style="margin-left: 66px;">Oscilloscope, EMI Test Receivers, Function Generator, Logic Analyzer, Digital Multimeter</inline></p>
+                    <p>Technologies: <inline style="margin-left: 20px;">Quartus, Keil MDK, Fusion 360/Cura, LTSpice, Cadence, Microsoft Office</inline></p>
+                </div>
 
-        <p><strong>Media Center Embedded System (Nov 2022)</strong></p>
-        <ul>
-            <li>Created a media center on the NXP LPC1768 microcontroller.</li>
-            <li>Features included a photo gallery, audio player, and games.</li>
-        </ul>
+                <div class="experience card">
+                    <h2 class="headinfo">Relevant Experience</h2>
+                    <p><strong>Electromagnetic Compatibility (EMC) & Reliability Intern - AMD, Markham, ON<inline class="inline-date">(May 2021 - Aug 2022)</inline></strong></p>
+                    <ul>
+                        <li>Performed Electromagnetic Interference (EMI), Radio Frequency Interference (RFI), and Safety pre-certification tests on various AMD GPUs.</li>
+                        <li>Verified AMDs GPUs comply with international standards for EMI/RFI (CISPR 32/FCC Part 15-B) and Safety (IEC62368-1 Ed 2).</li>
+                        <li>Mitigated EMI/RFI/Safety failures resulting from GPUs to ensure compliance with respective standards and first time pass at third-party certification. </li>
+                        <li>Assisted in 15+ EMC/Safety certifications in AMD Markham/third-party certification labs, and completed 125+ pre-certification tests on various AMD products. </li>
+                        <li>Experience with troubleshooting issues in Windows during systems setups by modifying vBIOS/IFWI, sBIOS, and Windows drivers. Debugged numerous issues brought up in Linux/Datacenter system setups, and with installation of AMD ROCm. </li>
+                        <li>Trained upcoming PEYs and wrote guides on various AMD tools, lab procedures and internal/external hardware and software to assist 3rd party sites and new students. </li>
+                        <li>Reduced EMI/Safety/RFI test overhead by modifying and creating excel templates using Excel VBA.</li>
+                    </ul>
+                </div>
 
+                <div class="school_projects card">
+                    <h2 class="headinfo">School Projects & Experience</h2>
+                    <p><strong>HPS/FPGA Based MD5 Decryption SoC<inline class="inline-date">(May 2023)</inline></strong></p>
+                    <ul>
+                        <li>DE1-SoC Dev Board was used to compute 32 MD5 hashes concurrently on an Altera Cyclone V FPGA. A custom MD5 hash controller application was created using a dual core ARM Cortex A9 based microcontroller running Yocto Linux.</li>
+                        <li>Communication between the FPGA and processor was facilitated by the AMBA bus using the AMBA 3.0 (AXI V1.0) 32-bit protocol. Custom Avalon Memory Mapped (MM) Slaves were created using Altera's Qsys Integration Tool.</li>
+                    </ul>
+            
+                    <p><strong>Single Button Smart Phone Interface<inline class="inline-date">(April 2023)</inline></strong></p>
+                    <ul>
+                        <li>Created a Smartphone Interface (SPI) which controls basic smartphone functions through a single physical button and a 24x2 LCD. By timing button presses, users can dial a number, call saved contacts, all while the SPI collects ECG data to be sent wirelessly via Bluetooth to an app.</li>
+                    </ul>
+            
+                    <p><strong>Media Center Embedded System<inline class="inline-date">(Nov 2022)</inline></strong></p>
+                    <ul>
+                        <li>Created a media center on the NXP LPC1768 microcontroller.</li>
+                        <li>Features included a photo gallery, audio player, and games.</li>
+                    </ul>
+                    <p><strong>Metropolitan Undergraduate Student Society: Equity Committee <inline class="inline-date">(May 2020)</inline></strong></p>
+                    <ul>
+                        <li>Raised awareness of issues facing students by creating a list of on campus resources which includes mental health and wellbeing, sexual violence and sexual support, and academic needs. The resource list is displayed on the MUES website.</li>
+                        <li>Started the creation of an “Equality in Engineering” video showing off the diversity in Engineering, and the hardships that minorities face in the Engineering field.</li>
+                    </ul>
+                </div>
 
-        <!--Personal Projects-->
-        <h2>Personal Projects</h2>
-        <p><strong>Capacitive Touch Bike Alarm (Dec 2021)</strong></p>
-        <ul>
-            <li>Utilized capacitive touch in a bike lock to sound an alarm when unknown users interact with the lock. To deactivate the alarm, a combination must be entered, which was implemented using digital logic circuitry.</li>
-            <li>Additional design challenge was to keep the system cheap, and easy to make, which was accomplished by using an RC circuit along with an ATtiny85 microcontroller. Final BOM was less than $10, and designed in 3 days.</li>
-        </ul>
+                <div class="personal_projects card">
+                    <h2 class="headinfo">Personal Projects</h2>
+                    <p><strong>Capacitive Touch Bike Alarm<inline class="inline-date">(Dec 2021)</inline></strong></p>
+                    <ul>
+                        <li>Utilized capacitive touch in a bike lock to sound an alarm when unknown users interact with the lock. To deactivate the alarm, a combination must be entered, which was implemented using digital logic circuitry.</li>
+                        <li>Additional design challenge was to keep the system cheap, and easy to make, which was accomplished by using an RC circuit along with an ATtiny85 microcontroller. Final BOM was less than $10, and designed in 3 days.</li>
+                    </ul>
+            
+                    <p><strong>Finite State Machine Dice<inline class="inline-date">(Nov 2020)</inline></strong></p>
+                    <ul>
+                        <li>Created a pseudo randomized dice game utilizing the 7400-series TTL ICs.</li>
+                        <li>Dice randomly outputs a state based on a custom-made finite state machine. Randomness was achieved by quickly switching states using a 555-timer circuit.</li>
+                        <li>Created custom decoder which decoded the 3-bit FSM output into an LED dice-face representation. Symmetry was utilized to reduce the number of gates in the decoder.</li>
+                        <li>PCB was designed in EAGLE for easy reproduction for use in board games.</li>
+                    </ul>
+                </div>
+            </div>
 
-        <p><strong>Finite State Machine Dice (Nov 2020)</strong></p>
-        <ul>
-            <li>Created a pseudo randomized dice game utilizing the 7400-series TTL ICs.</li>
-            <li>Dice randomly outputs a state based on a custom-made finite state machine. Randomness was achieved by quickly switching states using a 555-timer circuit.</li>
-            <li>Created custom decoder which decoded the 3-bit FSM output into an LED dice-face representation. Symmetry was utilized to reduce the number of gates in the decoder.</li>
-            <li>PCB was designed in EAGLE for easy reproduction for use in board games.</li>
-        </ul>
+            <div class="page2">
+                <div class="courses card">
+                    <h2 class="headinfo">Courses</h2>
+                    <p>ELE 401 (Field Theory), ELE 531 (Electromagnetics), ELE 637 (Energy Conversion), ELE 404 (Electronic Circuits I), ELE 504 (Electronic Circuits II)</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
