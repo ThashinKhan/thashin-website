@@ -12,7 +12,7 @@ body{
 }
 
 .header.info{
-    width: 450px;
+    width: 500px;
     margin: 30px auto;
     text-align: center;
 }
@@ -33,10 +33,28 @@ body{
     border-radius: 50%;
 }
 
+.header a:link,
+.header a:visited{
+    background-color: #F2E6BB;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: #415191;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header a:hover,
+.header a:active{
+    background-color: #E8D387;
+    color: #5d75d4;
+}
+
 .about_me p{
     background-color: #F8F2DC;
     border-radius: 20px;
-    padding: 10px 6px;
+    padding: 10px 7px;
 }
 
 .card{
@@ -75,6 +93,11 @@ body{
     font-size: 14px;
     text-align: left;
     padding: 5px;
+}
+
+.proj img:hover{
+    border: 2px solid red;
+    filter:opacity(75%);
 }
 
 .proj h3{
