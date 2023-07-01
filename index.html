@@ -7,23 +7,60 @@
     </head>
 
     <body>
-        <div class="header_info">
+        <div class="header info">
             <img src = "./img/headshot.png" width="300" alt="Thashin Khan Picture">
-            <h1>Thashin Khan</h1>
-            <p><a href = "./resume.html">RESUME</a> | <a href = "./projects.html">PROJECTS</a> | <a href = "mailto:thashinkhan@gmail.com">EMAIL</a> | <a href = "https://www.linkedin.com/in/thashinkhan/">LINKEDIN</a></p>
-            <!-- <a href = "https://github.com/ThashinKhan">GITHUB</a> -->
+            <div class="header text">
+                <h1>Thashin Khan</h1>
+                <p><a href = "./resume.html">RESUME</a> | 
+                <a href = "./projects.html">PROJECTS</a> | 
+                <a href = "mailto:thashinkhan@gmail.com">EMAIL</a> | 
+                <a href = "https://www.linkedin.com/in/thashinkhan/">LINKEDIN</a> |
+                <a href = "https://github.com/ThashinKhan">GITHUB</a></p>
+            </div>
         </div>
 
-        <div class="about_me">
+        <div class="about_me card">
             <h2>About Me</h2>
             <p>My name is Thashin Khan and I'm an Electrical Engineering student from Toronto Metropolitan University.
                 I recently completed a 16 month internship as an Electromagnetic Compatibility (EMC) & Reliability Intern at AMD.
-                I have an interest in Embedded Systems and System on Chip (SoC) design, however I am still learning everyday!  
-                Below you'll find some highlighted projects in the areas that I am most interested in.</p>
+                I have an interest in Embedded Systems and System on Chip (SoC) design, and below you'll find some highlighted projects 
+                in these areas.  
+                </p>
         </div>
 
-        <h2>Highlighted Projects</h2>        
-        <h2>Summary of Qualifications</h2>   
+        <div class="projects card">
+            <h2>Highlighted Projects</h2> 
+            <div class="project_cards">
+                <div class="first proj"> 
+                    <h3>Single Button Smart Phone Interface</h3>
+                    <img class = "SPI" src = "./img/SPI.png" alt="LCD displaying a number and a 3D printed button">
+                    <p>The Smart Phone Interface (SPI) was created to aid people who suffer from limited finger and speech 
+                        dexterity (Parkinsons, Multiple sclerosis, Paralysis, etc). By controlling the frequency and length 
+                        of button actuations, SPI users can perform basic smartphone functionality such as dialing a number or 
+                        calling a contact. The SPI also collects and sends ECG information via Bluetooth to a custom Android app. 
+                        Wireless RF communication occurs between the LCD and button for a full wireless system. A custom UART 
+                        communication protocol was created to facilitate wireless data transfer between the ATmega328P microcontrollers 
+                        and smartphone.</p>
+                </div> 
+                <div class="second proj">
+                    <h3>HPS/FPGA Based MD5 Decryption SoC</h3>
+                    <img class = "MD5" src = "./img/MD5.png" alt = "left is 32 MD5 digests, right is the MD5 algorithm.">
+                    <p>A DE1-SoC Dev Board was used to calculate 32 MD5 hashes concurrently on an Altera Cyclone V FPGA. A custom MD5 
+                        hash controller application was created using a dual core ARM Cortex A9 based microcontroller running Yocto 
+                        Linux. Communication between the FPGA and processor was facilitated by the AMBA bus using the AMBA 3.0 (AXI V1.0) 
+                        32-bit protocol. Custom Avalon Memory Mapped (MM) Slaves were created using Altera's Qsys Integration Tool.</p>
+                </div>  
+                <div class="third proj">
+                    <h3>Finite State Machine Dice</h3>
+                    <img class = "dice" src = "./img/dice.png" alt = "PCB for a FSM dice, and a 3D printed enclosure">
+                    <p>Pseudo randomized dice game created using 7400-series TTL ICs. The dice face consists of LEDs connected to a 3-bit 
+                        finite state machine which contains all 6 dice faces. By using a decoder, the state information was converted to a 
+                        dice face on the LEDs. Randomness was achieved by quickly switching states using a 100KHz 555-timer circuit. A custom 
+                        PCB was designed in EAGLE for easy reproduction and use in board games.</p>
+                </div>  
+            </div>
+        </div>
+             
     </body>
 
 </html>

@@ -4,27 +4,91 @@
     margin: 0px;
     border: 0px;
     padding: 0px;
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 body{
     background-color: #29335C;
 }
 
-.header_info{
-    width: 400px;
-    background-color: #009FFD;
+.header.info{
+    width: 450px;
     margin: 30px auto;
     text-align: center;
 }
 
-.about_me{
-    width: 80%;
+.header.text{
+    background-color: #DB5461;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.header.text p{
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #F8F2DC;
+}
+
+.header img{
+    border-radius: 50%;
+}
+
+.about_me p{
+    background-color: #F8F2DC;
+    border-radius: 20px;
+    padding: 10px 6px;
+}
+
+.card{
+    width: 70%;
+    border: 10px solid #DB5461;
+    border-radius: 20px;
     background-color: #DB5461;
     margin: 30px auto;
     text-align: center;
 }
 
-.about_me p{
+.project_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project_cards img,
+.project_cards p,
+.project_cards .proj{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.proj{
+    height: 620px;
+    margin: 5px;
+    flex: 0 1 400px;
     background-color: #F8F2DC;
+}
+
+.proj p{
+    width: 90%;
+    background-color: #F2E6BB;
+    margin: 0px auto;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px;
+}
+
+.proj h3{
+    padding: 5px;
+}
+
+.SPI{
+    width: 70%;
+}
+
+.MD5{
+    width: 83%;
+}
+
+.dice{
+    width: 90%
 }
