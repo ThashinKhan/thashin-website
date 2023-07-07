@@ -13,7 +13,7 @@
                 <div class="information card">
                     <h1 style="font-size: medium;">Thashin Khan</h1>
                     <p>Toronto, Ontario, Canada</p>
-                    <p><a href="mailto:thashinkhan@gmail.com">thashinkhan@gmail.com</a> | <a href = "https://www.linkedin.com/in/thashinkhan/">linkedin</a></p>
+                    <p><a href="mailto:thashinkhan@gmail.com">thashinkhan@gmail.com</a> | <a href = "https://www.thashin.com">thashin.com</a> | <a href = "https://www.linkedin.com/in/thashinkhan/">LinkedIn</a> | <a href = "https://www.github.com/ThashinKhan">GitHub</a></p>
                 </div>
 
                 <div class="education card">
@@ -54,18 +54,20 @@
             
                     <p><strong>Single Button Smart Phone Interface<inline class="inline-date">(April 2023)</inline></strong></p>
                     <ul>
-                        <li>Created a Smartphone Interface (SPI) which controls basic smartphone functions through a single physical button and a 24x2 LCD. By timing button presses, users can dial a number, call saved contacts, all while the SPI collects ECG data to be sent wirelessly via Bluetooth to an app.</li>
+                        <li>A Smart Phone Interface (SPI) was created to aid users with limited fine motor dexterity. A large physical button was used to complete basic smartphone functionality such as dialing a number or calling a contact. ECG information was also collected by the SPI.</li>
+                        <li>The SPI was controlled by varying the timing and frequency of presses on a single 3D printed button. A menu system was implemented on a 24x2 character LCD which displayed the actions of the user, phone numbers, contact names, and heart-rate. </li>
+                        <li>RF transceivers connected all three ATmega328P microcontrollers found in the button, LCD, and ECG circuit for a fully wireless system.</li>
+                        <li>The SPI was also connected to a custom Android app via Bluetooth to send and recieve data such as phone numbers, contact names, call status, ECG graphing, etc. A custom UART based communication protocol was created to facilitate data transfer.</li>
                     </ul>
             
                     <p><strong>Media Center Embedded System<inline class="inline-date">(Nov 2022)</inline></strong></p>
                     <ul>
-                        <li>Created a media center on the NXP LPC1768 microcontroller.</li>
-                        <li>Features included a photo gallery, audio player, and games.</li>
+                        <li>Created a media center on the NXP LPC1768 microcontroller. Features included a photo gallery, audio player, and games.</li>
                     </ul>
-                    <p><strong>Metropolitan Undergraduate Student Society: Equity Committee <inline class="inline-date">(May 2020)</inline></strong></p>
+                    <p><strong>Metropolitan Undergraduate Student Society: Equity Committee <inline class="inline-date">(Aug 2019 - May 2020)</inline></strong></p>
                     <ul>
-                        <li>Raised awareness of issues facing students by creating a list of on campus resources which includes mental health and wellbeing, sexual violence and sexual support, and academic needs. The resource list is displayed on the MUES website.</li>
-                        <li>Started the creation of an “Equality in Engineering” video showing off the diversity in Engineering, and the hardships that minorities face in the Engineering field.</li>
+                        <li>Raised awareness of on campus resources by creating a list of mental health/wellbeing, sexual violence/support, and academic needs resources on campus. The resource list is displayed on the MUES website.</li>
+                        <li>Helped with the creation of an “Equality in Engineering” video showing off the diversity in Engineering, and the hardships that minorities face in the Engineering field. This video was posted on the MUES Instagram page.</li>
                     </ul>
                 </div>
 
@@ -73,21 +75,18 @@
                     <h2 class="headinfo">Personal Projects</h2>
                     <p><strong>Capacitive Touch Bike Alarm<inline class="inline-date">(Dec 2021)</inline></strong></p>
                     <ul>
-                        <li>Utilized capacitive touch in a bike lock to sound an alarm when unknown users interact with the lock. To deactivate the alarm, a combination must be entered, which was implemented using digital logic circuitry.</li>
-                        <li>Additional design challenge was to keep the system cheap, and easy to make, which was accomplished by using an RC circuit along with an ATtiny85 microcontroller. Final BOM was less than $10, and designed in 3 days.</li>
+                        <li>Utilized an RC circuit connected to a bike lock to sound an alarm when unknown users interact with the lock. Created using an ATtiny85 microcontroller. Cost and time constraints included a design in less than 3-days and under $10.</li>
                     </ul>
             
                     <p><strong>Finite State Machine Dice<inline class="inline-date">(Nov 2020)</inline></strong></p>
                     <ul>
-                        <li>Created a pseudo randomized dice game utilizing the 7400-series TTL ICs.</li>
-                        <li>Dice randomly outputs a state based on a custom-made finite state machine. Randomness was achieved by quickly switching states using a 555-timer circuit.</li>
-                        <li>Created custom decoder which decoded the 3-bit FSM output into an LED dice-face representation. Symmetry was utilized to reduce the number of gates in the decoder.</li>
-                        <li>PCB was designed in EAGLE for easy reproduction for use in board games.</li>
+                        <li>Created a pseudo randomized dice game using 7400-series TTL ICs. A custom PCB was designed in EDA software for reproduction and use in board games.</li>
+                        <li>Dice randomly outputs a state based on a custom-made finite state machine. Randomness was achieved by quickly switching states using a 555-timer circuit. A custom decoder was created to convert the 3-bit FSM output into a "dice face" representation. Symmetry was utilized to reduce the number of gates in the decoder.</li>
                     </ul>
                 </div>
                 <div class="courses card">
                     <h2 class="headinfo">Courses</h2>
-                    <p>ELE 401 (Field Theory), ELE 531 (Electromagnetics), ELE 637 (Energy Conversion), ELE 404 (Electronic Circuits I), ELE 504 (Electronic Circuits II)</p>
+                    <p>COE838 (Systems-on-Chip Design), COE718 (Embedded Systems Design), ELE734 (Low-Power Digital Integrated Circuits), COE608 (Computer Organization and Architecture)</p>
                 </div>
             </div>
         </div>
