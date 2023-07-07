@@ -29,6 +29,11 @@ body{
     background-color: #F8F2DC;
 }
 
+.header.text a{
+    display: inline-block;
+}
+
+
 .header img{
     border-radius: 50%;
 }
